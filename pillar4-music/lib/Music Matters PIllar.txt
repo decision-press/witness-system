@@ -1,0 +1,13 @@
+﻿Music Matters
+Definition
+Music Matters is now the fourth official project within the Witness System.
+It represents the sonic dimension of witness and expression, and will later integrate with hardware (Fantom 8), sequencing experiments, symbolic composition, and potential public-facing content.
+Purpose
+To explore sound as a mode of witness, creativity, and system expression without collapsing into the other three pillars.
+Its job is music, not theology, not community logistics, not meta-architecture.
+Status
+• Activated
+• Stored in memory
+• Recognized as an independent pillar
+• Ready for structural definition when you want to build it out
+

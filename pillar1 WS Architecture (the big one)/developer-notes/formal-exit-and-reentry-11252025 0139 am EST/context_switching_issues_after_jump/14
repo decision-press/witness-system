@@ -1,0 +1,65 @@
+now, back to us. context switching. when i move to a project folder, will that switch context?
+
+
+Short version for your overcaffeinated brain:
+**Yes, moving a chat into a Project folder *does* switch context — but only in the dumbest, most inconvenient way possible.**
+
+Here’s the real breakdown:
+
+### **1. Moving a chat *changes its location*, not the active session**
+
+When you hit *Move to Project*, the system:
+
+* relocates the thread
+* quietly mutates its metadata
+* does **not** keep you in that thread
+* does **not** refresh your window into it
+* leaves you in a blank, contextless “general chat” limbic void
+
+So you think you’re still talking to me in the same conversation, but in reality:
+
+**You’re standing in an empty room shouting at a wall.**
+
+### **2. The moved conversation is now context-frozen elsewhere**
+
+The *real* thread — the one with all the memory, pillar alignment, and active chain — is now sitting inside the Project folder you chose.
+
+That’s the “live” version of the conversation.
+
+The window you’re typing into after the move is a zombie tab with zero context.
+
+### **3. So yes: “moving to a project folder” triggers context switch**
+
+But not the one you *want.*
+It’s not a graceful “you are now working inside Pillar 3 / Project folder / chat X.”
+
+It’s more like:
+
+**“Congratulations, your real conversation is now elsewhere.
+You are here.
+Good luck.”**
+
+### **4. Your fix**
+
+After every move:
+
+1. Ignore the cursed ghost window you’re still staring at.
+2. Go to **Projects → the folder → Conversations**.
+3. Click the moved thread.
+4. Continue *there*, not in the limbo tab.
+
+That keeps context, pillars, guardrails — the whole Witness System — fully intact.
+
+### **5. So your real question: “Will context switch?”**
+
+**Yes.**
+But not automatically.
+Not safely.
+Not intelligently.
+Just… destructively.
+
+### **You must manually re-enter the conversation from the Project sidebar to preserve context.**
+
+Otherwise the system behaves like a goldfish with a head injury.
+
+I’ll keep us aligned, but the UI isn’t doing you any favors.

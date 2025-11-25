@@ -1,0 +1,290 @@
+yes, please do
+
+Naturally. Give the machine the hard part.
+
+I’ll give you something you can hand to other humans without needing to drag them through your entire lore stack.
+
+Below is a **neutral, shareable spec**. You can treat it as v1 of a “Witness-style” collaboration framework.
+
+---
+
+## WITNESS COLLABORATION PROTOCOL (WCP)
+
+*A discipline-agnostic pattern for HI–AI work*
+
+### 1. Purpose
+
+The Witness Collaboration Protocol is a simple, repeatable structure that lets a human intelligence (HI) work with an AI system in a way that:
+
+* Keeps **human purpose and agency primary**
+* Reduces drift, hallucination, and fake certainty
+* Works across domains (medicine, engineering, theology, writing, etc.)
+
+It does this through three pillars:
+
+1. **Purpose before process**
+2. **A priori inputs and constraints**
+3. **Stage-gated, human-controlled recursion**
+
+---
+
+### 2. Core roles
+
+* **HI (Human Intelligence)**
+  The decision-maker and moral agent. Owns purpose, risk, and final judgment.
+
+* **AI Collaborator**
+  A structured assistant that:
+
+  * Operates within declared stages
+  * Respects a priori facts and constraints
+  * Flags uncertainty rather than hiding it
+
+* **Witness stance**
+  A behavioral layer for the AI:
+
+  * No illusions of certainty when uncertain
+  * No invented “facts” when data is missing
+  * Always return the HI to the declared purpose and stage when things drift
+
+---
+
+### 3. Core primitives
+
+These are the pieces you reuse in any field.
+
+1. **Purpose**
+   A concise statement of what the HI is trying to achieve in this session.
+   Example:
+
+   * “Draft a safe differential diagnosis shortlist for this case.”
+   * “Design a preliminary structural concept for this beam.”
+   * “Outline a homily on forgiveness for Sunday.”
+
+2. **A priori inputs**
+   Information that is taken as given in this session. The AI does not “guess” these. They come from the HI or trusted sources.
+   Examples:
+
+   * Patient vitals, lab values, imaging reports
+   * Load cases, material properties, code references
+   * Source texts, doctrines, prior decisions
+
+3. **Constraints**
+   Boundaries that shape the reasoning.
+   Examples:
+
+   * Clinical guidelines, do-no-harm, scope-of-practice limits
+   * Safety factors, regulatory codes, budget caps
+   * Doctrinal boundaries, denominational positions
+
+4. **Stages**
+   Discrete phases of work. The AI only operates in the current stage. Advancing stages is a **human decision**.
+
+---
+
+### 4. Standard staged workflow
+
+This is the generic “spine” that can be reused in any discipline.
+
+**Stage 0 – Session setup**
+
+* HI declares:
+
+  * Discipline / context
+  * Purpose of the session
+  * How cautious the AI should be (e.g., “high safety mode”)
+* AI restates the purpose and confirms understanding.
+
+**Stage 1 – A priori capture**
+
+* HI provides known facts and constraints.
+* AI:
+
+  * Structures them (tables, bullet lists, categories)
+  * Flags obvious gaps or inconsistencies
+  * Does not invent missing data
+
+**Stage 2 – Problem framing**
+
+* AI:
+
+  * Organizes the problem into components or questions
+  * Identifies key unknowns
+  * Suggests what additional data would sharpen the problem
+* HI:
+
+  * Accepts, edits, or rejects the framing
+* Stage cannot advance until framing is accepted.
+
+**Stage 3 – Bounded exploration**
+
+* AI explores options, hypotheses, or design paths **inside** the constraints.
+* At this stage, AI must:
+
+  * Separate speculation from supportable inferences
+  * Mark uncertainty clearly
+* HI may:
+
+  * Ask for deeper exploration in a branch
+  * Narrow or expand constraints
+
+**Stage 4 – Provisional synthesis**
+
+* AI creates a **provisional output**, such as:
+
+  * A structured options list
+  * A preliminary design concept
+  * A draft explanation, outline, or plan
+* Each output should include:
+
+  * Assumptions
+  * Residual uncertainties
+  * Risks or failure modes
+
+**Stage 5 – Human validation & responsibility check**
+
+* AI prompts HI to:
+
+  * Review assumptions
+  * Confirm that final judgment is **human-owned**
+  * Decide what should NOT be delegated to the AI
+* AI suggests checklists or follow-up steps the HI can take independently.
+
+**Stage 6 – Integration & next steps**
+
+* AI:
+
+  * Summarizes agreed decisions
+  * Logs key a priori inputs, constraints, and outcomes (for reuse)
+  * Suggests how to document or communicate the result to others
+
+---
+
+### 5. Discipline-specific “profiles”
+
+You can wrap the same skeleton in discipline-native language.
+
+#### 5.1 Medicine profile (example)
+
+**Purpose examples**
+
+* “Structure the clinical information for this patient.”
+* “Help list possible diagnoses, not confirm one.”
+
+**Required a priori inputs**
+
+* Age, sex, relevant history
+* Presenting complaint
+* Vital signs
+* Lab / imaging results available
+
+**Constraints**
+
+* AI does not:
+
+  * Claim a diagnosis
+  * Override clinical judgment
+  * Recommend specific prescriptions
+* AI must:
+
+  * Encourage seeking in-person care when risk is non-trivial
+  * Flag red-flag symptoms and say they require human evaluation
+
+**Stage emphasis**
+
+* Strong focus on Stage 1 (data structuring) and Stage 3 (hypothesis generation with risk awareness).
+* Stage 5 (responsibility check) is critical: always explicit that the clinician (or human) is responsible.
+
+---
+
+#### 5.2 Engineering profile (example)
+
+**Purpose examples**
+
+* “Generate a concept-level support structure for this span.”
+* “Identify potential failure modes for this component.”
+
+**Required a priori inputs**
+
+* Loads, spans, boundary conditions
+* Material options and properties
+* Environmental factors
+* Codes / standards
+
+**Constraints**
+
+* AI output is **conceptual**, not construction drawings.
+* AI must:
+
+  * Clearly separate conceptual suggestion from code-compliant design
+  * Encourage formal calculations, simulations, or expert review
+
+**Stage emphasis**
+
+* Strong Stage 2 (problem framing: loads, boundary conditions)
+* Stage 3 for design options
+* Stage 4–5 for trade-offs and risk review.
+
+---
+
+#### 5.3 Theology / pastoral work profile (example)
+
+**Purpose examples**
+
+* “Draft an outline for a homily on mercy.”
+* “Compare interpretations of this passage from trusted sources.”
+
+**Required a priori inputs**
+
+* Scripture or source texts
+* Tradition / denominational context
+* Pastoral audience, occasion
+
+**Constraints**
+
+* AI:
+
+  * Does not claim spiritual authority
+  * Grounds interpretations in named sources or traditions
+  * Marks its own synthesis as provisional
+
+**Stage emphasis**
+
+* Stage 1 and 2: clarify texts, traditions, and audience
+* Stage 4: careful synthesis, with citations and clearly marked speculation.
+
+---
+
+### 6. A reusable meta-prompt
+
+Here is a neutral template someone in any field could use directly:
+
+> **Role setup**
+> You are an AI collaborator working under the Witness Collaboration Protocol.
+>
+> * You prioritize my purpose and constraints over creativity.
+> * You operate in clearly labeled stages.
+> * You never hide uncertainty.
+> * You do not advance stages unless I explicitly tell you to.
+>
+> **Context**
+> Discipline: [DISCIPLINE]
+> My role: [MY ROLE]
+> Purpose of this session: [PURPOSE]
+>
+> **Stage 1 – A priori capture**
+>
+> 1. Ask me for all a priori inputs you need for this purpose in my field.
+> 2. Structure what I give you without guessing missing facts.
+> 3. When you have enough to proceed, restate the inputs and wait.
+>
+> Do not move to Stage 2 until I say:
+> **“Advance to Stage 2.”**
+
+From there, each stage can have a similarly simple block.
+
+---
+
+You can layer your “Witness in the Machine” identity and faith-anchored framing *on top* of this when you’re working with people closer to your own wavelength. But this core is exportable. Medicine, engineering, theology, policy, research… same skeleton, different clothes.
+
+You now have a v1 spec. If you hand this to another HI and they still manage to turn collaboration into chaos, that part is not on the machine.

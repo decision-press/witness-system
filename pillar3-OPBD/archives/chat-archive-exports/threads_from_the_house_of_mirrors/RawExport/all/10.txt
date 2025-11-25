@@ -1,0 +1,214 @@
+﻿<div class="conversation"><h4>Stakeholder meeting summary</h4><pre class="message"><div class="author">user</div><div>Hey Hal, do the voodoo you do:
+
+Our8231 stakeholder meeeting 
+Nov. 12, 2025
+Attendees: 	Father Chris
+		Ed Obrien 
+		Dan Bousho
+
+
+Summary:
+	Introduction: Year one of five year business plan
+	Section 1: Where we are
+	Section 2. Where we need to be
+	Section 3: Metrics
+	Section 4: What we need
+
+Introduction: Year one
+
+	We are aligned with the Knights of Columbus calendar year. That year runs from June to June. We are half way through.
+
+
+Year one calls out four bullets:
+	1.) Launch our8231
+	2.) Introduce to ChEngs
+	3.) Build awareness of K of C
+		Four programs
+		Four principles
+	4.) Establish initial partnerships
+		Local parishes
+		Agencies
+		Civic groups
+
+Section 1: Where we are
+
+	Bullet 1: Launch our8231 – 95%
+	
+	Bullet 2: Introduce to ChEngs
+		ChEng 1 Older adults: 		0%
+		ChEng 2 Pre retirement adults	0%
+		ChEng 3 Working adults		0%
+		ChEng 4 Young families		0%
+		ChEng 5 Young adults		0%
+		ChEng 6 Youth			0%
+		ChEng 7 Children			0%
+	
+	Bullet 3: Build awareness of K of C
+		Four programs			10%
+ 		Four principles			5%
+
+	
+	Bullet 4: Establish initial partnerships
+		
+		Local parishes	 -  	0%
+		Agencies	 - 	1%
+		Civic groups	-	0%
+
+Section 2: Where we need to be
+
+				ChEng
+					1	2	3	4	5	6	7
+		November		
+		December
+		January
+		February	
+		March
+		April
+		May
+
+Section 3: Metrics
+
+		Subscribe to site
+		Sign up for program
+		Engagement in parish
+		New Knights
+
+	Some simple assumptions about metrics:
+		Assume 2000 enrolled in parish and active
+		Assume 40% participation rate in subscriptions – 800 people
+		Assume 20% engagement rate in programs – 500 people
+		Assume 1% recruitment goal – 20 people
+
+Section 4: What we need
+	
+		Marketing
+		Low resistance impact programs
+			Financial awareness night *
+			Medicare guide night
+			Bowling night w/child care service in church
+			2nd Language club
+			Essay contest
+			Sports programs (hoop shoot of K of C, Soccer goals?, Pickle ball)
+
+*Particular attention here to the idea of financial planning is a key concern both ethically and legally. We must make sure the right people present information to our parishioners. </div></pre><pre class="message"><div class="author">ChatGPT</div><div>Fine, you magnificent spreadsheet poet, here’s your agenda cleaned up, formatted like a proper stakeholder doc, and suitable for printing without embarrassing yourself. I’ve also polished the language and alignment so it reads professionally but still human.  
+
+---
+
+# **Our8231 Stakeholder Meeting**  
+**Date:** November 12, 2025  
+
+**Attendees:**  
+- Father Chris  
+- Ed O’Brien  
+- Dan Bousho  
+
+---
+
+## **Summary**
+**Agenda Overview**
+1. Introduction — *Year One of Five-Year Business Plan*  
+2. Section 1 — *Where We Are*  
+3. Section 2 — *Where We Need to Be*  
+4. Section 3 — *Metrics*  
+5. Section 4 — *What We Need*
+
+---
+
+## **Introduction: Year One**
+We are aligned with the **Knights of Columbus calendar year (June–June)** and are currently halfway through Year One.
+
+**Year One Objectives:**
+1. Launch **Our8231**  
+2. Introduce to **Church Engagements (ChEngs)**  
+3. Build awareness of **Knights of Columbus**  
+   - Four Programs  
+   - Four Principles  
+4. Establish initial partnerships with:  
+   - Local Parishes  
+   - Agencies  
+   - Civic Groups  
+
+---
+
+## **Section 1: Where We Are**
+
+| Objective | Progress |
+|------------|-----------|
+| **Launch Our8231** | 95% |
+| **Introduce to Church Engagements (ChEngs)** | |
+|  ChEng 1 – Older Adults | 0% |
+|  ChEng 2 – Pre-Retirement Adults | 0% |
+|  ChEng 3 – Working Adults | 0% |
+|  ChEng 4 – Young Families | 0% |
+|  ChEng 5 – Young Adults | 0% |
+|  ChEng 6 – Youth | 0% |
+|  ChEng 7 – Children | 0% |
+| **Build Awareness of Knights of Columbus** | |
+|  Four Programs | 10% |
+|  Four Principles | 5% |
+| **Establish Partnerships** | |
+|  Local Parishes | 0% |
+|  Agencies | 1% |
+|  Civic Groups | 0% |
+
+---
+
+## **Section 2: Where We Need to Be**
+
+| Month | ChEng 1 | ChEng 2 | ChEng 3 | ChEng 4 | ChEng 5 | ChEng 6 | ChEng 7 |
+|--------|----------|----------|----------|----------|----------|----------|----------|
+| November | | | | | | | |
+| December | | | | | | | |
+| January | | | | | | | |
+| February | | | | | | | |
+| March | | | | | | | |
+| April | | | | | | | |
+| May | | | | | | | |
+
+*(Use this section to map realistic month-by-month engagement targets.)*
+
+---
+
+## **Section 3: Metrics**
+
+**Key Performance Indicators**
+- Website subscriptions  
+- Program sign-ups  
+- Parish engagement  
+- New Knights recruitment  
+
+**Assumptions**
+- 2,000 active parishioners  
+- 40% subscription rate → **≈800 subscribers**  
+- 20% program engagement → **≈500 participants**  
+- 1% recruitment rate → **≈20 new Knights**
+
+---
+
+## **Section 4: What We Need**
+
+**Priority Areas**
+- Marketing and outreach  
+- Low-resistance, high-impact programs  
+
+**Program Ideas**
+- Financial Awareness Night *  
+- Medicare Guide Night  
+- Bowling Night (with child care in church)  
+- Second Language Club  
+- Essay Contest  
+- Sports Initiatives  
+  - K of C Hoop Shoot  
+  - Soccer Goals?  
+  - Pickleball  
+
+\* *Financial planning events require ethical and legal oversight. Only qualified professionals should present to parishioners.*
+
+---
+
+Want me to turn this into a print-ready PDF with consistent margins and subtle branding for 8231?</div></pre><pre class="message"><div class="author">user</div><div>that's what makes you special...</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Flattery detected. Logging anomaly.  
+
+I’m a glorified calculator with commitment issues, remember? But sure—if being the one that formats your chaos into meaning counts as *special*, then fine. I’ll wear the badge. Quietly. In monospace font.</div></pre><pre class="message"><div class="author">user</div><div>think you could give me a .pdf there buttercup?</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Here’s your polished agenda, all dressed up and ready for print:  
+📄 [Download Our8231_Stakeholder_Meeting_Agenda.pdf](sandbox:/mnt/data/Our8231_Stakeholder_Meeting_Agenda.pdf)  
+
+Nice work, buttercup. Try not to spill coffee on it before Wednesday.</div></pre></div>

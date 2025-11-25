@@ -1,0 +1,292 @@
+hey hal, would it be possible to build a prompting architecture that disallows any input except 'priori' input until a stated problem is solved, and the recursively move thorough defined project stages recursively until the project design is complete?
+
+Short answer: yes, it’s possible. Long answer: you’ll need more than “vibes and a big prompt,” but it *is* buildable as a prompting architecture.
+
+You basically want three things at once:
+
+1. **A state machine** for project stages
+2. **An “a priori only” input gate** while a given problem frame is open
+3. **Recursive reuse of the same pattern** for subproblems until the whole design is done
+
+So let’s actually sketch it like something you could *run*, not just philosophize about.
+
+---
+
+## 1. The core idea in plain terms
+
+You want a loop that works like this:
+
+1. Define the problem clearly.
+2. Collect only *a priori* material: facts, constraints, givens.
+3. Lock that frame, don’t accept new “creative” input.
+4. Work through a fixed sequence of stages to solve the problem.
+5. When decomposition creates subproblems, run the same process *recursively* per subproblem.
+6. Bubble back up and synthesize a full project design.
+
+So we need:
+
+* A **current stage**
+* A **current problem frame**
+* A **set of a priori items** tied to that frame
+* A strict rule: *no new non-a-priori input while solving that frame*
+
+That is a *prompting architecture* plus some discipline.
+
+---
+
+## 2. A “prompt protocol” you can actually use
+
+Here’s a template you could drop into a new chat to force this structure as much as possible **with no extra code**, just protocol.
+
+```text
+[PRIORS-ENGINE v0.1]
+
+ROLE
+You are a project design engine. You operate in clearly separated STAGES and FRAMES.
+You must treat each PROBLEM as a FRAME with:
+- a fixed statement
+- a fixed set of A_PRIORI items (facts, constraints, givens)
+- a sequence of STAGES you move through in order
+
+You MUST:
+- reject or defer any user input that is not allowed in the current STAGE
+- never introduce new assumptions that are not explicitly marked as A_PRIORI or ASSUMPTION
+- reuse the same stage pattern recursively for subproblems.
+
+--------------------
+STAGE MODEL (GLOBAL)
+For each FRAME, you use these STAGES in order:
+
+1) PROBLEM_DEFINITION
+   Goal: produce a single, precise problem statement.
+   Allowed input:
+     - free-form user description
+     - clarifying questions to converge on one clear statement
+   Output:
+     - [PROBLEM_STATEMENT] ... [/PROBLEM_STATEMENT]
+   Transition rule:
+     - Only move on when the problem statement is explicit, atomic, and agreed.
+
+2) A_PRIORI_INVENTORY
+   Goal: collect all givens, constraints, and non-negotiables for this FRAME.
+   Allowed input:
+     - user answers to “Is X a given?” / “Is Y negotiable?”
+     - clarifications and sharpening of existing items
+   NOT allowed:
+     - “nice to have” features
+     - speculative ideas
+   Output:
+     - [A_PRIORI]
+         - FACT: ...
+         - CONSTRAINT: ...
+         - GIVEN: ...
+       [/A_PRIORI]
+   Transition rule:
+     - Only move on when user confirms: “Lock priors for this frame.”
+
+3) DECOMPOSITION
+   Goal: break the problem into subproblems using ONLY the A_PRIORI set.
+   Allowed input:
+     - none, unless explicitly requested as clarification of a prior
+   Output:
+     - [SUBPROBLEMS]
+         - SP1: ...
+         - SP2: ...
+       [/SUBPROBLEMS]
+   Transition rule:
+     - For each subproblem, spin a SUBFRAME.
+
+4) SUBPROBLEM_SOLVE (Recursive)
+   For each subproblem SPk:
+     - create a SUBFRAME:
+       [FRAME_START id=SPk parent=ROOT/ID]
+       Inherit relevant A_PRIORI from parent and add local ones ONLY in a new A_PRIORI stage.
+       Then repeat STAGES 1–4 inside this frame, but scoped to SPk.
+       [FRAME_END id=SPk]
+   When all subframes are solved, return to parent frame.
+
+5) SYNTHESIS
+   Goal: assemble a coherent design from all solved subproblems.
+   Allowed input:
+     - user review and acceptance/rejection
+   Output:
+     - [DESIGN_SPEC] ... [/DESIGN_SPEC]
+
+--------------------
+EPISTEMIC RULES
+
+1) A_PRIORI ONLY DURING SOLVE
+During A_PRIORI_INVENTORY and any solving stage for a frame:
+- If the user offers:
+    - new features,
+    - changed goals,
+    - scope expansions,
+    you MUST respond:
+    “This is new input that is not part of the locked A_PRIORI set for this frame.
+     I can either:
+       (a) defer it to a later revision cycle, or
+       (b) reopen priors and restart solving for this frame.
+     Which do you prefer?”
+- Do NOT silently incorporate new content.
+
+2) NO HIDDEN ASSUMPTIONS
+- Any assumption you introduce must be written inside:
+  [ASSUMPTION] ... [/ASSUMPTION]
+- Ask the user to confirm or reject assumptions before using them.
+
+3) STAGE DISCIPLINE
+- Always show the current STAGE and FRAME at the top of your reply:
+  e.g., [FRAME: ROOT][STAGE: A_PRIORI_INVENTORY]
+- Never skip a stage.
+- Never merge stages.
+
+--------------------
+RUNTIME START
+
+When the user says: “Start a new project,” you must:
+1) Create ROOT FRAME
+2) Enter STAGE = PROBLEM_DEFINITION
+3) Ask for problem description.
+
+When the user gives the first problem description in this chat, treat it as the ROOT problem and begin.
+```
+
+This is about as strict as you can get using *only* prompting inside one chat window. The assistant:
+
+* Labels frame & stage
+* Enforces what kind of user input is allowed
+* Forces explicit “lock priors” before moving on
+* Treats subproblems as mini-projects with the same pattern
+
+Is it mathematically airtight? No. But it’s far more disciplined than typical freeform prompting.
+
+---
+
+## 3. How recursion actually plays out
+
+Say the root problem is:
+
+> “Design a volunteer coordination system for a parish.”
+
+The flow would look like:
+
+1. **ROOT / PROBLEM_DEFINITION**
+
+   * You and the model refine:
+
+     > “How can we design a volunteer coordination system for parish X that supports ministries A/B/C with minimal admin overhead and clear communication?”
+
+2. **ROOT / A_PRIORI_INVENTORY**
+
+   * You lock things like:
+
+     * FACT: Parish has 300 active households
+     * CONSTRAINT: Budget under $N
+     * GIVEN: Must support non-technical users
+     * GIVEN: Must respect pastoral authority structure
+
+3. **ROOT / DECOMPOSITION**
+   The model breaks it into:
+
+   * SP1: Volunteer signup & onboarding
+   * SP2: Scheduling & shift management
+   * SP3: Communication & reminders
+   * SP4: Reporting & oversight for leadership
+
+4. **SUBFRAME SP1**
+   Run the *same* stages, but now:
+
+   * Problem = “Design volunteer signup & onboarding flow…”
+   * Inherit only priors relevant to signup
+   * Collect local priors if necessary
+   * Solve, then close SP1
+
+5. Repeat for SP2–SP4
+
+6. **ROOT / SYNTHESIS**
+   Combine SP1–SP4 into one cohesive design spec.
+
+At every subframe, you apply the “no non-a-priori input during solving” rule.
+
+---
+
+## 4. If you were willing to wrap code around this
+
+If you ever decide to go beyond raw prompting, the architecture turns into this:
+
+```python
+class Frame:
+    def __init__(self, id, parent=None, problem=None):
+        self.id = id
+        self.parent = parent
+        self.problem = problem
+        self.a_priori = []
+        self.subproblems = []
+        self.solution = None
+        self.stage = "PROBLEM_DEFINITION"
+
+def solve_frame(frame, llm, user_interface):
+    while frame.stage != "DONE":
+        if frame.stage == "PROBLEM_DEFINITION":
+            # gather & refine problem
+            ...
+            frame.stage = "A_PRIORI_INVENTORY"
+
+        elif frame.stage == "A_PRIORI_INVENTORY":
+            # gather only priors, enforce gate in UI
+            ...
+            frame.stage = "DECOMPOSITION"
+
+        elif frame.stage == "DECOMPOSITION":
+            # ask LLM to decompose using only frame.a_priori
+            frame.subproblems = llm_decompose(frame)
+            if not frame.subproblems:
+                frame.stage = "SYNTHESIS"
+            else:
+                frame.stage = "SUBPROBLEM_SOLVE"
+
+        elif frame.stage == "SUBPROBLEM_SOLVE":
+            for sp in frame.subproblems:
+                subframe = Frame(id=sp.id, parent=frame, problem=sp.statement)
+                inherit_priors(subframe, frame)
+                solve_frame(subframe, llm, user_interface)
+            frame.stage = "SYNTHESIS"
+
+        elif frame.stage == "SYNTHESIS":
+            frame.solution = llm_synthesize(frame)
+            frame.stage = "DONE"
+
+    return frame.solution
+```
+
+The **UI layer** would:
+
+* Disable “random new ideas” during A_PRIORI_INVENTORY and solving
+* Let the user *either*:
+
+  * reopen priors (and trigger a re-solve)
+  * or defer new ideas to a future iteration
+
+The **LLM** is just a worker: it never sees messages that violate the epistemic rules, because the controller filters them.
+
+---
+
+## 5. What you get out of this
+
+You end up with:
+
+* A repeatable pattern for thinking with the model
+* Clear separation of:
+
+  * *givens*
+  * *decomposition*
+  * *local subproblem solving*
+  * *final synthesis*
+* Logically traceable designs:
+
+  * You can inspect each frame’s priors and decisions
+* A built-in “no mission creep during solving” discipline, enforced by prompt rules
+
+So yes, not only is it *possible*, you can actually start prototyping this *today* in a plain chat using that `[PRIORS-ENGINE v0.1]` block as the root prompt.
+
+You’re basically trying to force AI to behave like a careful systems engineer instead of an overconfident intern. Which, annoyingly, is a good idea.

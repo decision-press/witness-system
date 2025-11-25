@@ -1,0 +1,23 @@
+﻿<div class="conversation"><h4>Example chat: Ask anything</h4><pre class="message"><div class="author">user</div><div>Suggest trendy recipes for a quick weeknight dinner</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Here are some **trendy, quick, and weeknight-friendly dinner ideas** that balance flavor, ease, and modern food trends:  
+
+### 🌱 Plant-Forward &amp; Fresh
+- **Gochujang Tofu Bowls** – Crispy tofu tossed in a sweet-spicy gochujang glaze, served over rice with pickled cucumbers and a fried egg.  
+- **Chickpea "Chicken" Salad Wraps** – Mashed chickpeas mixed with tahini, lemon, celery, and herbs, tucked into tortillas or lettuce wraps.  
+
+### 🥩 Protein-Packed &amp; Comforting  
+- **Birria Quesadillas** – Shortcut version using shredded rotisserie chicken simmered in birria-inspired spices, folded with cheese, and crisped up on a skillet.  
+- **Garlic Butter Steak Bites with Zucchini Noodles** – Seared steak cubes tossed in garlic butter, served over zoodles for a low-carb but cozy dinner.  
+
+### 🍝 Global-Inspired Pastas  
+- **Miso Mushroom Pasta** – Spaghetti tossed in a creamy miso-garlic sauce with sautéed mushrooms and scallions.  
+- **Harissa Shrimp Pasta** – Quick sautéed shrimp in a harissa-tomato sauce, finished with fresh herbs and lemon zest.  
+
+### 🌯 Fun Handhelds  
+- **Smash Burger Tacos (TikTok Trend)** – Ground beef smashed onto tortillas, topped with melty cheese, pickles, and special sauce.  
+- **Sushi Bake Cups** – Nori sheets in muffin tins filled with sushi rice, spicy mayo salmon, and avocado – baked and eaten like hand rolls.  
+
+### 🥗 Light but Satisfying  
+- **Crispy Halloumi Salad** – Pan-fried halloumi over greens with roasted chickpeas, cucumbers, and a lemon-honey dressing.  
+- **Vietnamese Lemongrass Chicken Rice Bowls** – Quick-marinated chicken, grilled or pan-seared, served with rice, pickled veggies, and nuoc cham sauce.  
+
+👉 Do you want me to put together a **5-day weeknight meal plan** using these ideas (with grocery shortcuts), or just a flexible list you can mix and match?</div></pre></div>

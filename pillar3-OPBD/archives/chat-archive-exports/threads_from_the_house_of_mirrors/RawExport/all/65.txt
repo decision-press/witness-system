@@ -1,0 +1,20 @@
+﻿<div class="conversation"><h4>Change to password login</h4><pre class="message"><div class="author">user</div><div>change to password login instead of google login</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Got it — you want to switch your ChatGPT login from Google-based to a standard password login. Here’s how you can do that:  
+
+### Steps to Change From Google Login to Password Login
+1. **Log out** of ChatGPT if you’re currently signed in with Google.  
+2. Go to the [ChatGPT login page](https://chat.openai.com).  
+3. Instead of clicking *Continue with Google*, enter the **same email address** you use for your Google login.  
+4. Click **Forgot password?**  
+   - This will send you a password reset link.  
+   - Use it to set up a password for your account.  
+5. Once the password is created, you can now log in directly with **email + password** instead of Google.  
+
+### Important Notes
+- You **must use the same email** that’s tied to your Google login, otherwise it’ll treat it as a brand-new account.  
+- After setting a password, both methods will work:  
+  - **Email + password**  
+  - **Google sign-in**  
+  You can just ignore the Google option if you prefer.  
+- If you don’t see the “Forgot password?” option (sometimes it hides depending on login flow), choose **“Try another way”** — it will still let you request a password reset for your Google-linked email.  
+
+Do you want me to also walk you through how to **disable Google login entirely** so only password works, or do you just want both options available but mainly use password?</div></pre></div>

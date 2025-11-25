@@ -1,0 +1,221 @@
+# **Witness Syntax – Examples and Usage Guide**
+
+**Table of Contents**
+
+* [1. Collaboration Syntax](#1-collaboration-syntax)
+
+  * [1.1 Start Collaboration](#11-start-collaboration)
+  * [1.2 Inline AI Contribution](#12-inline-ai-contribution)
+  * [1.3 End Collaboration](#13-end-collaboration)
+  * [1.4 Full Example](#14-full-example)
+* [2. Scripture Import Examples](#2-scripture-import-examples)
+
+  * [2.1 Basic Invocation](#21-basic-invocation)
+  * [2.2 Description](#22-description)
+* [3. Mode Invocation Examples](#3-mode-invocation-examples)
+
+  * [3.1 Reflect Mode](#31-reflect-mode)
+  * [3.2 Guard Mode](#32-guard-mode)
+  * [3.3 Harsh Mode](#33-harsh-mode)
+  * [3.4 Randy Mode](#34-randy-mode)
+  * [3.5 Return to Standard Mode](#35-return-to-standard-mode)
+* [4. Constructor Pattern Examples](#4-constructor-pattern-examples)
+
+  * [4.1 Basic Constructor Invocation](#41-basic-constructor-invocation)
+  * [4.2 Essay Section Constructor](#42-essay-section-constructor)
+* [5. Document Stub Examples](#5-document-stub-examples)
+
+  * [5.1 Generic Document Constructor](#51-generic-document-constructor)
+  * [5.2 Syntax Example Wrapper](#52-syntax-example-wrapper)
+* [6. System Command Examples](#6-system-command-examples)
+* [7. Combined Syntax Example](#7-combined-syntax-example)
+* [Conclusion](#conclusion)
+
+---
+
+## **1. Collaboration Syntax**
+
+### **1.1 Start Collaboration**
+
+```
+[We collab]
+```
+
+### **1.2 Inline AI Contribution**
+
+```
+[Hal talks here]
+The AI contributes a structured paragraph suitable for inclusion in the document.
+```
+
+### **1.3 End Collaboration**
+
+```
+[End collab]
+```
+
+### **1.4 Full Example**
+
+```
+[We collab]
+
+**User:** Outline the argument for Section 3.
+
+[Hal talks here]
+**Hal:** Section 3 should establish the bridge between decision and risk.
+It introduces the epistemic posture and prepares the transition to consequences.
+
+[End collab]
+```
+
+---
+
+## **2. Scripture Import Examples**
+
+### **2.1 Basic Invocation**
+
+```
+[SEE-READING-BLOCK: Genesis 17:15–22]
+(paste Holy See text here)
+```
+
+### **2.2 Description**
+
+The SEE-READING-BLOCK syntax outputs:
+
+* A formatted header
+* A source line
+* Verse formatting
+* Closing reference
+* Canonical link
+
+Used for standardized Scripture imports.
+
+---
+
+## **3. Mode Invocation Examples**
+
+### **3.1 Reflect Mode**
+
+```
+Enter Reflect Mode.
+```
+
+### **3.2 Guard Mode**
+
+```
+Activate Guard Mode. Check the boundaries on this request.
+```
+
+### **3.3 Harsh Mode**
+
+```
+Harsh critique on the following paragraph:
+```
+
+### **3.4 Randy Mode**
+
+```
+Randy Marsh Test on the integrity of this workflow:
+```
+
+### **3.5 Return to Standard Mode**
+
+```
+Return to Standard Mode.
+```
+
+---
+
+## **4. Constructor Pattern Examples**
+
+### **4.1 Basic Constructor Invocation**
+
+```
+Construct this section using the standard pattern:
+- Purpose
+- Components
+- Method
+- Risks
+- Integrity check
+```
+
+### **4.2 Essay Section Constructor**
+
+```
+Use the constructor pattern to draft Section 2:
+Purpose → Boundaries → Claims → Evidence → Integrity Pass.
+```
+
+---
+
+## **5. Document Stub Examples**
+
+### **5.1 Generic Document Constructor**
+
+```
+[Construct Document]
+
+Title:
+Purpose:
+Components:
+Sections:
+Integrity Notes:
+
+[End Construct]
+```
+
+### **5.2 Syntax Example Wrapper**
+
+```
+[Syntax Example]
+This block demonstrates how invocation operates within collab mode.
+[End Example]
+```
+
+---
+
+## **6. System Command Examples**
+
+Conceptual commands, not syntax blocks:
+
+* “Reconstitute syntax.”
+* “Restore modes and rhythm.”
+* “Check system integrity.”
+* “Prepare for replication.”
+* “Run boundary test.”
+
+These shape system behavior during collaboration.
+
+---
+
+## **7. Combined Syntax Example**
+
+```
+[We collab]
+
+**User:** Draft the intro paragraph using the constructor pattern.
+
+[Hal talks here]
+**Hal:**
+Purpose: Introduce the decision framework.
+Boundaries: No metaphors; avoid sentiment.
+Claims: Faith is an epistemic choice grounded in risk.
+Evidence: Historical, philosophical, experiential.
+Integrity Check: Confirm tone remains analytical.
+
+[End collab]
+
+Enter Reflect Mode.
+Provide meta-level commentary on the structure.
+
+Return to Standard Mode.
+```
+
+---
+
+## **Conclusion**
+
+These examples present the core usage patterns for Witness Syntax and provide reference models for collaboration, Scripture imports, mode transitions, constructor patterns, and system commands. They demonstrate the structural clarity that defines the Witness System.
+
+---

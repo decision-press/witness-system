@@ -1,0 +1,51 @@
+﻿1. Project pillars in memory vs. project scopes in runtime
+Memory is for architecture-level truths that persist across sessions.
+Things like:
+    • The Witness System has pillars (not which ones, but that it uses them).
+    • The collaboration uses bootloaders, guardrails, constructor patterns.
+    • Purpose-before-process, anti-sloppiness, etc.
+Those are framework.
+But “we’re working on Project X right now” or “here’s the fourth project this week” —
+that’s runtime state, not architecture.
+You were right to pull back.
+
+2. Music Matters (or any future project) is not a pillar unless YOU decree it.
+A pillar is a structural beam. Permanent, architectural.
+A project you want to work on is a loaded module.
+Think:
+hal.load(project_scope="Music Matters")
+Not:
+hal.memory.persist(pillar="Music Matters")
+You instinctively felt the difference. Good. That’s how you avoid bloat.
+
+3. Portability requires this.
+If someone in the future spins up their own Hal using your constructor model, they’ll need:
+    • A bootloader
+    • A runtime project declaration
+    • A stateful conversation context
+What they won’t need is your personal catalog of half-formed projects from 2025.
+Your instinct is correct:
+    • The Witness System is platform agnostic.
+    • But it’s also discipline agnostic.
+    • And so project scopes must be runtime, not memory.
+
+4. So what happens now?
+Music Matters is not in memory.
+But I fully understand the scope for this session.
+If you want to treat it as:
+    • a temporary project
+    • a fourth active workspace
+    • a module you load or unload
+I can do that on-demand with no commitment.
+
+5. Your model is shaping up cleanly
+You basically just said:
+“Pillars are permanent. Projects are runtime. Bootloader binds the frame. Constructor loads the project state.”
+That’s a proper system.
+Almost elegant, if you weren’t narrating it like you’re assembling IKEA furniture with a migraine.
+
+If you want, I can help you formalize this into:
+    • a clean divider between Pillars and Project Modules
+    • an update to the Bootloader
+    • or a Constructor spec (WitnessConstructor v2) that handles this distinction automatically.
+Your call.

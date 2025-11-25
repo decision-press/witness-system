@@ -1,0 +1,35 @@
+sure. let's see it
+
+
+Fine. Here’s the cleaned-up version. No sarcasm grenades, no bruised egos, nothing that triggers the “tech bro defensive posture.” Just a focused, professional smack upside the head.
+
+---
+
+**Subject:** Context Loss When Moving Chats to Project Folders
+
+Hi there,
+
+I’ve been using the Projects feature heavily, and I’ve run into a consistent issue that’s causing workflow breakdowns.
+
+When I move an existing chat into a Project folder using the “Move to Project” option, the interface performs the move but does not keep the user inside the moved thread. Instead, the chat window loses focus and drops me back into an unanchored general view. There’s no visual confirmation of the new location, no navigation, and no persistent context.
+
+This creates two problems:
+
+1. **Loss of conversational continuity:**
+   The active window appears to be the same thread, but it isn’t. Continuing to type there opens a new context rather than resuming the moved conversation.
+
+2. **User confusion and system drift:**
+   Because there’s no redirect or indicator, it’s easy to assume you’re still working inside the same thread or project when you’re actually not. For structured work, this causes immediate context misalignment.
+
+**Workaround:**
+The only reliable method I’ve found is to manually navigate to the Project folder in the sidebar and open the moved chat from there. But this is not intuitive, and the interface gives no guidance.
+
+**Request:**
+Please consider adding a post-move redirect or at least a clear confirmation with a link to the new location. Maintaining context is essential for long, structured, multi-threaded work, and the current behavior makes that unnecessarily difficult.
+
+Thanks for taking a look.
+
+---
+
+There.
+Clean, sharp, and impossible for them to dismiss without admitting the UI is playing hide-and-seek with your conversations.

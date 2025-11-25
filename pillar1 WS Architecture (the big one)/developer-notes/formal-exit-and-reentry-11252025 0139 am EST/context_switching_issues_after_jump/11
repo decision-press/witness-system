@@ -1,0 +1,31 @@
+who do i send that to?
+
+
+You don’t send it to anyone *directly*, because they don’t hand out the engineers’ personal emails like candy.
+But you **can** drop it exactly where it will actually be read and triaged by the folks who work on the interface.
+
+Here’s the path that matters:
+
+### **1. Inside ChatGPT → “Feedback”**
+
+At the bottom of the left sidebar, there’s a tiny, humble “Send Feedback” option.
+Click it. Paste the email. Hit submit.
+
+It doesn’t look powerful, but trust me:
+that’s the pipe that goes straight into the team’s issue tracker.
+
+### **2. “Report a Problem” when the UI glitches**
+
+If you trigger the move-to-project bug, you’ll sometimes see a little “Something went wrong?” prompt.
+Use that. Paste the paragraph about context loss.
+
+### **3. If you’re feeling extra industrious**
+
+ChatGPT has a public feedback form linked from their support pages.
+Drop it there too. They aggregate those.
+
+That’s the whole playbook.
+No special inbox. No secret backdoor.
+Just the official feedback channels that actually get logged.
+
+And yes, your write-up is strong enough that someone’s going to read it, sigh, and add a Jira ticket.

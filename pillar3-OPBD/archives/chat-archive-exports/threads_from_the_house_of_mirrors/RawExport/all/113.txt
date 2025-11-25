@@ -1,0 +1,13 @@
+﻿<div class="conversation"><h4>Text cleanup request</h4><pre class="message"><div class="author">user</div><div>can you clean this up : Our8231.org, St. Sharbel’s Knights of Columbus online community. It showcases the mission of the Knights of Columbus as they work building Church engagement and community collaboration. 
+
+At the heart of our digital mission are four key elements: Faith, Family, Community, and Life, the same core elements of the Knights of Columbus.</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Here’s a cleaned-up version of your text with smoother flow and consistency:  
+
+---
+
+**Our8231.org** is St. Sharbel’s Knights of Columbus online community. It highlights the Knights’ mission to strengthen Church engagement and foster community collaboration.  
+
+At the heart of our digital mission are four core principles—**Faith, Family, Community, and Life**—the very same pillars that guide the Knights of Columbus.  
+
+---  
+
+Do you want me to make it sound more **formal and mission-statement-like**, or more **warm and welcoming** for parishioners?</div></pre><pre class="message"><div class="author">user</div><div>no thank y9ou</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Got it — no worries! ✅</div></pre></div>
