@@ -1,0 +1,313 @@
+You want to give the witness-system an `AUTOEXEC.BAT` and immortalize it in git. Good. Finally some ritual we can point at instead of keeping it all in your head.
+
+Let’s do a v0 that’s simple, real, and pushable.
+
+---
+
+## 1. Where these files live
+
+I’d suggest:
+
+* `~/Projects/witness-system/docs/autoexec-witness.md`
+* `~/Projects/witness-system/bin/wit-boot` (or `witness-boot.sh` if you like the 90s)
+
+That gives you:
+
+* One **human-facing boot document**
+* One **shell helper** that reminds you of the ritual and sets context
+
+---
+
+## 2. `docs/autoexec-witness.md` (v0.1)
+
+Here’s a first version you can drop straight in.
+Tone is clean & operational on purpose:
+
+````markdown
+# Witness-System Autoexec (v0.1)
+
+**File:** `docs/autoexec-witness.md`  
+**Purpose:** Define a repeatable boot sequence for the operator + witness-system on a Linux box.  
+**Scope:** Human discipline + directory structure + constructor usage. No magic.
+
+---
+
+## 0. Intent & scope check
+
+Before touching the keyboard:
+
+1. State today’s **primary intent** in one sentence.  
+   - Example: “Clarify Pillar 3 protocols for collaboration” or “Work on Astro layout for public site.”
+2. Confirm **this session is part of the witness-system** (not casual chat, not random browsing).
+3. If the intent doesn’t belong in any pillar, do not start a witness session.
+
+---
+
+## 1. Environment
+
+**Assumed environment:**
+
+- OS: Linux
+- Root repo: `~/Projects/witness-system` (or equivalent)
+- Version control: `git`
+- Editor: any (vim, nano, VS Code, etc.)
+
+**Required directories (conceptual):**
+
+- `constructor/` – canonical constructor text & versions  
+- `pillars/` – pillar-specific docs, guides, workflows  
+- `logs/` – transcripts, notes, session artifacts  
+- `meta/` (optional) – governance, decisions, design notes  
+
+Adjust naming to match the actual repo, but keep the roles stable.
+
+---
+
+## 2. Mode & color-state
+
+The witness-system uses simple modes:
+
+- **grey** – no pillar active; general/meta orientation only  
+- **green** – a specific pillar is active and in-bounds  
+- (Other colors may be defined later; green is the normal “in pillar” state.)
+
+**Rule:**  
+Do not mix pillars. One active pillar per session or sub-session.
+
+---
+
+## 3. Boot sequence (human ritual)
+
+1. **Open terminal & set root**
+
+   ```bash
+   cd ~/Projects/witness-system
+````
+
+2. **Pull latest changes**
+
+   ```bash
+   git pull
+   ```
+
+3. **Confirm today’s intent (from Section 0) is still valid.**
+   If it changed, restate it.
+
+4. **Select pillar (if any):**
+
+   Example:
+
+   * Pillar 3 – Open the Pod Bay Door (OPBD) for collaboration / epistemic protocols
+   * ASTRO-DEV pillar for web dev work
+   * etc.
+
+   Record the selected pillar at the top of your working note for the day.
+
+5. **Set initial mode:**
+
+   * Start in **grey**.
+   * Only switch to **green** when you explicitly “enter” a pillar.
+
+6. **Locate the current constructor**
+
+   Example convention:
+
+   * `constructor/CONSTRUCTOR-current.md` → symlink or pointer to latest version
+   * Versioned files: `constructor/constructor-v2.1.3.md`, etc.
+
+   The current witness session uses the canonical constructor text from this file.
+
+---
+
+## 4. Chat session initialization
+
+When starting a fresh session with the model:
+
+1. **Load the constructor text** from the canonical file.
+2. **Instantiate the constructor** as the first move in the session.
+3. **Declare pillar and mode** at the top of the session, explicitly.
+
+Example (human side, conceptual):
+
+* “Context: witness-system / Pillar 3 – OPBD / mode: grey”
+* Then instantiate constructor.
+* Then explicitly:
+
+  * `enter pillar3-OPBD` (or equivalent command string)
+  * Model acknowledges and confirms green-state.
+
+---
+
+## 5. Logging & artifacts
+
+Each substantial session should produce a durable trace.
+
+**Minimum:**
+
+1. Create or append to a log file for the day, e.g.:
+
+   * `logs/2025-11-26-pillar3-OPBD.md`
+
+2. Capture key elements:
+
+   * Date / time
+   * Pillar
+   * Intent
+   * Major decisions or conclusions
+   * Pointers to any created files or branches
+
+3. For especially important exchanges, copy the relevant snippets from the chat into a log file in `logs/` or into the pillar’s own directory.
+
+---
+
+## 6. Drift-detection routine
+
+At natural checkpoints (or when something feels “off”):
+
+1. Re-state:
+
+   * Pillar
+   * Intent
+   * Mode (grey / green)
+2. Ask:
+
+   * Is the current topic still in-bounds for this pillar?
+   * Are we still following the constructor rules?
+3. If drift is detected:
+
+   * Stop.
+   * Note the drift in the log.
+   * Either:
+
+     * Recover by restating scope, or
+     * Explicitly exit the pillar / session.
+
+---
+
+## 7. Exit sequence
+
+When closing a work block:
+
+1. Summarize in 3–5 bullet points:
+
+   * What was decided
+   * What was created
+   * What is still open
+
+2. Save all edited files and run:
+
+   ```bash
+   git status
+   ```
+
+3. Stage and commit if appropriate:
+
+   ```bash
+   git add <relevant files>
+   git commit -m "Session log + updates for <pillar> on <YYYY-MM-DD>"
+   git push
+   ```
+
+4. Explicitly “exit” the pillar in the chat (e.g. `exit pillar3-OPBD`), returning to **grey**.
+
+---
+
+## 8. Versioning this autoexec
+
+* This file is **v0.1**.
+* Changes to the ritual should be:
+
+  * Documented in a short changelog at the bottom.
+  * Committed with clear messages.
+
+### Changelog
+
+* **v0.1** – Initial definition of witness-system autoexec:
+
+  * Intent check
+  * Environment assumptions
+  * Mode & color-state
+  * Boot, logging, drift, and exit routines
+
+````
+
+That gives you a stable, boring, reproducible “operator boot file.” Exactly what this wants to be.
+
+---
+
+## 3. `bin/wit-boot` helper script
+
+Now a small shell script that just:
+
+- Sets `WIT_ROOT`
+- Moves you there
+- Prints the core steps as a reminder
+
+Drop this into `bin/wit-boot` and `chmod +x` it:
+
+```bash
+#!/usr/bin/env bash
+# Witness-System Autoexec helper (v0.1)
+
+set -e
+
+# Adjust this if your path is different
+export WIT_ROOT="$HOME/Projects/witness-system"
+
+cd "$WIT_ROOT"
+
+echo "======================================="
+echo "  Witness-System Autoexec (v0.1)"
+echo "  Root: $WIT_ROOT"
+echo "======================================="
+echo
+echo "0) State intent for this session."
+echo "1) Confirm this work is in-scope for the witness-system."
+echo "2) Select pillar (or stay in grey if orienting)."
+echo "3) Open constructor file:"
+echo "     constructor/CONSTRUCTOR-current.md"
+echo "4) Start a new model session:"
+echo "     - Instantiate constructor"
+echo "     - Declare pillar + mode"
+echo "5) Log session in logs/YYYY-MM-DD-<pillar>.md as needed."
+echo
+echo "When done:"
+echo "  - Summarize outcomes"
+echo "  - git status / git add / git commit / git push"
+echo
+
+# Optional: launch editor or file browser on the repo
+# exec "$SHELL"
+````
+
+Make it executable:
+
+```bash
+cd ~/Projects/witness-system
+mkdir -p bin docs
+chmod +x bin/wit-boot
+```
+
+Then you can start your day with:
+
+```bash
+~/Projects/witness-system/bin/wit-boot
+```
+
+and let it nag you into discipline.
+
+---
+
+## 4. Commit & push
+
+Once those files are created:
+
+```bash
+cd ~/Projects/witness-system
+
+git add docs/autoexec-witness.md bin/wit-boot
+git commit -m "Add witness-system autoexec doc and boot helper (v0.1)"
+git push
+```
+
+There. You now have an actual, concrete autoexec for the witness-system, not just a vibe in your head. Which, frankly, is overdue.
