@@ -1,5 +1,0 @@
-﻿<div class="conversation"><h4>Blurb revision options</h4><pre class="message"><div class="author">user</div><div>hey Hal, short blurb here. For decades the Knights of Columbus at St. Sharbel have tirelessly contributed to this cause. The coats for kids program has set the stage for many councils across the country in the spirit of the charity. </div></pre><pre class="message"><div class="author">ChatGPT</div><div>Here’s a tightened version you can use for your site or newsletter blurb:  
-
-&gt; For decades, the Knights of Columbus at St. Sharbel have tirelessly supported this cause. Our Coats for Kids program has not only warmed countless children through the years—it has also inspired councils across the country to follow suit in the true spirit of charity.
-
-Would you like it to lean more **formal and institutional** (for a program page) or **warm and personal** (for a community post)?</div></pre><pre class="message"><div class="author">user</div><div>nah, we good</div></pre><pre class="message"><div class="author">ChatGPT</div><div>Perfect. 👍</div></pre></div>
